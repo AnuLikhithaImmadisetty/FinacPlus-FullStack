@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #0365D2;  /* Blue */
+    --secondary-color: #E53137; /* Red */
+    --text-color: #222; 
+    --subtext-color: #666;
+    --border-color: #B0B0B0;
+    --background-light: #F8F9FA;
+}
+
+/* Container Styling */
+.userContainer {
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.userContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+/* User Details Section */
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Row Styling */
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.3s ease;
+}
+
+/* Row Hover Effect */
+.detailRow:hover {
+    background-color: var(--background-light);
+}
+
+/* Labels */
+.label {
+    font-weight: bold;
+    color: var(--primary-color);
+    min-width: 150px;
+    flex-shrink: 0;
+}
+
+/* Values */
+.value {
+    color: var(--subtext-color);
+    word-wrap: break-word;
+    max-width: calc(100% - 150px);
+}
+
+/* About Section */
+.aboutRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.aboutLabel {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.aboutValue {
+    color: var(--subtext-color);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* 🎉 Animated Button */
+.animatedButton {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Hover & Click Effects */
+.animatedButton:hover {
+    background: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.animatedButton:active {
+    transform: scale(0.95);
+}

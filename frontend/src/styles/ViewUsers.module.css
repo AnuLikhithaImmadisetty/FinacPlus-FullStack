@@ -1,0 +1,184 @@
+.tableContainer {
+    padding: 20px;
+    overflow-x: auto;
+    position: relative;
+    background-color: #F8F9FA; /* Light gray for better readability */
+}
+
+/* Blur Effect */
+.blurred {
+    filter: blur(5px);
+    pointer-events: none; 
+}
+
+/* User Table */
+.userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+.userTable th, .userTable td {
+    padding: 12px;
+    border: 1px solid #B0B0B0;
+    text-align: left;
+    color: #333;
+}
+
+/* Table Header */
+.userTable th {
+    background-color: #0365D2; /* Blue */
+    color: white;
+    font-weight: bold;
+}
+
+/* Table Hover Effect */
+.userTable tr:hover {
+    background-color: #E6F0FF; /* Light Blue */
+}
+
+/* Action Icons */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #0365D2; /* Blue */
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #E53137; /* Red on hover */
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Pagination Buttons */
+.pagination button {
+    background-color: #0365D2; /* Blue */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #024BA8; /* Darker Blue */
+}
+
+.pagination button:disabled {
+    background-color: #B0B0B0;
+    cursor: not-allowed;
+}
+
+/* Pagination Text */
+.pagination span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Popup Modal */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+}
+
+/* Popup Content */
+.popupContent {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    animation: popupIn 0.3s ease-out forwards;
+}
+
+@keyframes popupIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Password Input */
+.passwordInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Popup Actions */
+.popupActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Cancel & Delete Buttons */
+.cancelButton, .deleteButton {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cancelButton {
+    background-color: #E0E0E0;
+    color: #333;
+}
+
+.cancelButton:hover {
+    background-color: #D6D6D6;
+}
+
+.deleteButton {
+    background-color: #E53137; /* Bright Red */
+    color: #fff;
+}
+
+.deleteButton:hover {
+    background-color: #B71C30; /* Darker Red */
+}
+
+/* Popup Header */
+.popupContent h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Popup Message */
+.popupContent p {
+    font-size: 16px;
+    color: #666;
+}

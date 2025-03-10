@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputGroup label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+}
+
+/* Enhanced Input Styling */
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight Input on Focus */
+.inputGroup input:focus,
+.inputGroup select:focus,
+.inputGroup textarea:focus {
+  border-color: #0365D2;
+  box-shadow: 0 0 5px rgba(3, 101, 210, 0.5);
+  outline: none;
+}
+
+.inputGroup select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDEwIj4gPHBvbHlsaW5lIHBvaW50cz0iMCAzIDUgOCAxMCAzIiBmaWxsPSIjMDAwIiAvPjwvc3ZnPg==') no-repeat right 10px center;
+  background-size: 12px 12px;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.passwordWrapper input {
+  flex: 1;
+}
+
+.toggleButton {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Button Group Styling */
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Added gap for better spacing */
+}
+
+/* Reset & Submit Buttons */
+.resetButton {
+  background-color: #0365D2; /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.submitButton {
+  background-color: #E53137; /* Red */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+/* Button Hover Effects */
+.resetButton:hover {
+  background-color: #024ea0; /* Slightly Darker Blue */
+}
+
+.submitButton:hover {
+  background-color: #c02931; /* Slightly Darker Red */
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .formContainer {
+    width: 90%;
+    padding: 20px 20px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .resetButton,
+  .submitButton {
+    margin-bottom: 10px;
+  }
+}

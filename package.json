@@ -1,0 +1,15 @@
+{
+  "name": "finacplussample",
+  "version": "1.0.0",
+  "description": "This README provides a step-by-step guide to setting up and running the FinacPlus Assignment project locally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodeman": "^1.1.2"
+  }
+}

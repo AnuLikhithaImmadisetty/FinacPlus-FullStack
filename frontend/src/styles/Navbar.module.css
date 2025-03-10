@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 180px; 
+  height: auto;
+  cursor: pointer;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Updated Button Colors */
+.viewUsers {
+  background-color: #0365D2; /* Blue */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.addUser {
+  background-color: #E53137; /* Red */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.viewUsers:hover {
+  background-color: #024ea0; /* Slightly Darker Blue */
+}
+
+.addUser:hover {
+  background-color: #c02931; /* Slightly Darker Red */
+}
+
+@media (max-width: 600px) {
+  .navbar {
+      padding: 15px 20px;
+  }
+}
