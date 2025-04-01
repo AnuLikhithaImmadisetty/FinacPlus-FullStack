@@ -1,6 +1,6 @@
-# FinacPlus Full-Stack Assignment
+# FinacPlusAuth User Registration System - Full Stack
 
-This README provides a step-by-step guide to set up and running the FinacPlus Full-Stack Assignment project locally.
+This README provides a step-by-step guide to set up and running the FinacPlusAuth User Registration System Full-Stack project locally.
 
 ## Table of Contents
 - Prerequisites
